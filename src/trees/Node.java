@@ -44,4 +44,12 @@ class Node
 		this.data = data;
 	}
     
+	public boolean isLeaf() {
+		
+		if(this.left==null && this.right==null) {
+			return true;
+		}
+		return false;
+		
+	}
 }
